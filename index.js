@@ -1,3 +1,4 @@
+// Using Scrape-it as scrapper
 const scrapeIt = require("scrape-it")
 
 const getListAnime = async(q) => {
@@ -16,5 +17,7 @@ await scrapeIt(`https://myanimelist.net/search/all?q=${q}&cat=anime`, {
 })
 
 }
+
+// Add The Anime Title As Parameter
 getListAnime('fairy tail')
 
